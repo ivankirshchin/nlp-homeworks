@@ -5,7 +5,7 @@ from tools.text_suggestion import TextSuggestion
 import pandas as pd
 import numpy as np
 
-corpus = pd.read_csv('data/corpus_sample.csv', dtype=str)
+corpus = pd.read_csv('data/corpus.csv', dtype=str)
 corp = [str(msg).split() for msg in corpus['message_norm']]
 
 word_completor = WordCompletor(corp)
